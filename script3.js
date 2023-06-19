@@ -74,7 +74,7 @@ async function loadMovieDetails() {
       movieSearchBox.value = "";
 
       const imdbID = movie.dataset.id;
-      const URL = `http://www.omdbapi.com/?i=${imdbID}&apikey=fc1fef96`;
+      const URL = `https://www.omdbapi.com/?i=${imdbID}&apikey=fc1fef96`;
 
       try {
         const res = await fetch(URL);
