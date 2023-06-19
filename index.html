@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="site-title">
+      <div class="site-logo">
+        <a href="index.html">
+          <div class="container">
+            <p>Cine<span>Search</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="search-container">
+        <div class="search-msg">
+          <h3>Search Movie:</h3>
+          <div class="search-brothers">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="search movie title"
+              id="search-box"
+            />
+            <button class="search-button" id="search-button">
+              <img src="search.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search-list" id="search-list"></div>
+
+    <div class="container">
+      <div class="result-container">
+        <div class="result-grid" id="result-grid"></div>
+      </div>
+    </div>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script3.js"></script>
+  </body>
+</html>
