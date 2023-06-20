@@ -167,12 +167,16 @@ img {
 }
 
 @media (max-width: 450px) {
+  body{
+    padding-left: 2px;
+  }
   .site-logo p {
     font-size: 1.4rem;
   }
   .search-container {
     display: flex;
     justify-content: flex-start;
+    margin-left: 50px;
   }
   .site-title h3 {
     margin-bottom: 0;
@@ -182,7 +186,9 @@ img {
     width: 400px;
   }
   #search-list {
+    width: 400px;
     grid-template-columns: 1fr 1fr;
+    margin-top: 200px;
   }
   .site-title {
     display: flex;
