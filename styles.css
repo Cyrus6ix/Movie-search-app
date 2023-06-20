@@ -176,6 +176,7 @@ img {
   }
   .site-title h3 {
     margin-bottom: 0;
+    margin-top: 77px;
   }
   #site-list {
     grid-template-columns: 1fr 1fr;
@@ -211,7 +212,8 @@ img {
   .search-brothers {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    margin-top: 23px;
+    width: 252px;
   }
 }
 
