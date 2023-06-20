@@ -178,6 +178,9 @@ img {
     margin-bottom: 0;
     margin-top: 77px;
   }
+  .html5-video-player{
+    width: 400px;
+  }
   #site-list {
     grid-template-columns: 1fr 1fr;
   }
