@@ -181,7 +181,7 @@ img {
   .html5-video-player{
     width: 400px;
   }
-  #site-list {
+  #search-list {
     grid-template-columns: 1fr 1fr;
   }
   .site-title {
