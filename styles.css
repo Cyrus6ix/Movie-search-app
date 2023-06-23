@@ -4,7 +4,7 @@
   --md-dark-color: #333232;
   --dark-color: #171717;
   --light-dark-color: #302e2e;
-  --oraange-color: #a63208;
+  --orange-color: #a63208;
 }
 * {
   padding: 0;
@@ -164,7 +164,7 @@ img {
 }
 
 @media (max-width: 450px) {
-  body{
+  body {
     padding-left: 2px;
   }
   .site-logo p {
@@ -179,7 +179,7 @@ img {
     margin-bottom: 0;
     margin-top: 77px;
   }
-  .html5-video-player{
+  .html5-video-player {
     width: 400px;
   }
   #search-list {
