@@ -14,9 +14,12 @@
 body {
   font-family: "Inter", sans-serif;
   background-color: var(--dark-color);
-  padding-left: 30px;
-  padding-right: 30px;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  background-attachment: fixed;
   background: url(7ZPW4t.webp);
+  background-position-x: center;
+  /* background-position-y: center; */
 }
 a {
   text-decoration: none;
@@ -26,7 +29,7 @@ img {
   display: block;
 }
 .site-title {
-  background-color: transparent;
+  background-color: var(--dark-color);
   top: 0;
   z-index: 500;
   align-items: center;
@@ -166,6 +169,7 @@ img {
 @media (max-width: 450px) {
   body {
     padding-left: 2px;
+    background-attachment: fixed;
   }
   .site-logo p {
     font-size: 1.4rem;
@@ -190,8 +194,8 @@ img {
   .site-title {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
   .search-msg .search-box {
     width: 90%;
