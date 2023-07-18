@@ -32,6 +32,9 @@
               class="search-box"
               placeholder="search movie title"
               id="search-box"
+              onkeydown=" if(event.key==='Enter'){
+                findMovies();
+              }"
             />
             <button class="search-button" id="search-button">
               <img src="search.svg" alt="" />
