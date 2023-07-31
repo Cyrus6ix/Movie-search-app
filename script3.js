@@ -2,7 +2,7 @@ const movieSearchBox = document.getElementById("search-box");
 const searchButton = document.getElementById("search-button");
 const searchList = document.getElementById("search-list");
 const resultGrid = document.getElementById("result-grid");
-
+const backButton = document.querySelector(".js-back-button");
 searchButton.addEventListener("click", findMovies);
 
 async function findMovies() {
@@ -90,6 +90,9 @@ async function loadMovieDetails() {
 }
 
 async function displayMovieDetails(details) {
+  backButton.innerHTML = `
+      <button class="back_button">Back</button>
+  `;
   resultGrid.innerHTML = `
     <div class="movie-poster">
         <img src="${
@@ -127,6 +130,11 @@ async function displayMovieDetails(details) {
     });
   }
 }
+backButton.addEventListener("click", () => {
+  displayMovieList(movies);
+  backButton.innerHTML = "";
+  resultGrid.innerHTML = "";
+});
 
 async function getTrailerVideoId(movieTitle) {
   const apiKey = "AIzaSyCde5W9REXwWO8z-d2Xgddm77m-XD7o528";
