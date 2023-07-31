@@ -5,6 +5,8 @@ const resultGrid = document.getElementById("result-grid");
 const backButton = document.querySelector(".js-back-button");
 searchButton.addEventListener("click", findMovies);
 
+let movies;
+
 async function findMovies() {
   let searchTerm = movieSearchBox.value.trim();
   if (searchTerm.length > 0) {
@@ -18,7 +20,7 @@ async function findMovies() {
       const data = await res.json();
 
       if (data.Response === "True") {
-        let movies = data.Search;
+        movies = data.Search;
         movies.sort((a, b) => a.Year.localeCompare(b.Year));
         displayMovieList(movies);
       } else {
@@ -71,7 +73,6 @@ async function loadMovieDetails() {
     viewDetailsButton.addEventListener("click", async (event) => {
       event.stopPropagation();
       searchList.classList.add("hide-search-list");
-      movieSearchBox.value = "";
 
       const imdbID = movie.dataset.id;
       const URL = `https://www.omdbapi.com/?i=${imdbID}&apikey=fc1fef96`;
@@ -92,8 +93,9 @@ async function loadMovieDetails() {
 async function displayMovieDetails(details) {
   backButton.innerHTML = `
       <button class="back_button">Back</button>
-  `;
+    `;
   resultGrid.innerHTML = `
+  
     <div class="movie-poster">
         <img src="${
           details.Poster !== "N/A" ? details.Poster : "image_not_found.png"
