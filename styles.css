@@ -39,6 +39,25 @@ img {
   position: sticky;
   padding-bottom: 10px;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.js-back-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.back_button {
+  padding: 5px 10px;
+  background-color: rgb(225, 23, 117);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
 .site-title .container {
   background-color: transparent;
   display: flex;
